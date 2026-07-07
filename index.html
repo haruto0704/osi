@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>推し紹介</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <aside class="sidebar">
+        <h2>━━メニュー━━</h2>
+        <ul>
+            <li><a href="#" onclick="showPage('home')">ホーム</a></li>
+            <li><a href="#" onclick="showPage('profile')">プロフィール</a></li>
+            <li><a href="#" onclick="showPage('favorite')">推し</a></li>
+            <li><a href="#" onclick="showPage('calendar')">誕生日カレンダー</a></li>
+            <li><a href="#" onclick="showPage('music')">好きな楽曲</a></li>
+            
+        </ul>
+    </aside>
+
+    <main class="content">
+
+    <section id="home" class="page">
+        <img src="images/logo.svg" alt="ロゴ" class="home-svg"><br><br>
+        <h1>ホーム</h1>
+        <h1>僕青  推し紹介サイトへ</h1>
+
+        <p>
+            このサイトでは、私が応援している
+            <strong>金澤亜美さん・萩原心花さん・安納蒼衣さん</strong>
+            のプロフィールや魅力を紹介しています。
+        </p>
+
+        <h2>✨ このサイトで見られること</h2>
+        <ul>
+            <li>📖 メンバーのプロフィール</li>
+            <li>📸 推しの写真</li>
+            <li>💜 好きなところ</li>
+            <li>🎵 おすすめの楽曲</li>
+        </ul>
+    </section>
+
+        <section id="profile" class="page" style="display:none;">
+            <img src="images/logo.svg" alt="ロゴ" class="home-svg"><br><br>
+            <h1>プロフィール</h1>
+            <p>ここはプロフィール画面です。</p>
+        </section>
+
+        <section id="favorite" class="page" style="display:none;">
+            <img src="images/logo.svg" alt="ロゴ" class="home-svg"><br><br>
+            <!-- 推し一覧 -->
+        <h1>💜 推し紹介</h1>
+        <div class="card-container">
+        <div class="card">
+            <img src="images/金澤亜美.jpg" alt="金澤亜美">
+            <h2>金澤亜美</h2>
+        <table class="profile-table">
+        <tr>
+            <th>ニックネーム</th>
+            <td>あみ</td>
+        </tr>
+        <tr>
+            <th>生年月日</th>
+            <td>2007年2月14日</td>
+        </tr>
+        <tr>
+            <th>血液型</th>
+            <td>B型</td>
+        </tr>
+        <tr>
+            <th>身長</th>
+            <td>156cm</td>
+        </tr>
+        <tr>
+            <th>出身地</th>
+            <td>神奈川県</td>
+        </tr>
+        <tr>
+            <th>パーソナルカラー</th>
+            <td>イエベ春</td>
+        </tr>
+        <tr>
+            <th>骨格</th>
+            <td>ウェーブ</td>
+        </tr>
+        <tr>
+            <th>顔タイプ</th>
+            <td>キュート</td>
+        </tr>
+        <tr>
+            <th>MBTI</th>
+            <td>INFJ</td>
+        </tr>
+    </table>
+
+    <!-- SNSリンク -->
+    <div class="sns">
+        <a href="https://www.instagram.com/kanazawa.ami_bokuao?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
+        <a href="https://www.tiktok.com/@kanazawaami_bokuao?is_from_webapp=1&sender_device=pc" target="_blank">TikTok</a>
+        <a href="https://bokuao.com/blog/list/1/0/?writer=16" target=" target="_blank">Blog</a>
+    </div>
+        </div>
+
+        <div class="card">
+            <img src="images/萩原心花.jpg" alt="萩原心花">
+            <h2>萩原心花</h2>
+        <table class="profile-table">
+        <tr>
+            <th>ニックネーム</th>
+            <td>こっかちゃん</td>
+        </tr>
+        <tr>
+            <th>生年月日</th>
+            <td>2006年6月30日</td>
+        </tr>
+        <tr>
+            <th>血液型</th>
+            <td>A型</td>
+        </tr>
+        <tr>
+            <th>身長</th>
+            <td>164cm</td>
+        </tr>
+        <tr>
+            <th>出身地</th>
+            <td>静岡県</td>
+        </tr>
+        <tr>
+            <th>パーソナルカラー</th>
+            <td>ブルベ冬</td>
+        </tr>
+        <tr>
+            <th>骨格</th>
+            <td>ウェーブ</td>
+        </tr>
+        <tr>
+            <th>顔タイプ</th>
+            <td>フェミニン</td>
+        </tr>
+        <tr>
+            <th>MBTI</th>
+            <td>INFP</td>
+        </tr>
+    </table>
+
+    <!-- SNSリンク -->
+    <div class="sns">
+        <a href="https://www.instagram.com/kokoka._bokuao?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
+        
+        <a href="https://bokuao.com/blog/list/1/0/?writer=23" target="_blank">Blog</a>
+    </div>
+        </div>
+
+        <div class="card">
+            <img src="images/安納蒼衣.jpg" alt="安納蒼衣">
+            <h2>安納蒼衣</h2>
+        <table class="profile-table">
+        <tr>
+            <th>ニックネーム</th>
+            <td>あおちゃん</td>
+        </tr>
+        <tr>
+            <th>生年月日</th>
+            <td>2007年1月30日</td>
+        </tr>
+        <tr>
+            <th>血液型</th>
+            <td>B型</td>
+        </tr>
+        <tr>
+            <th>身長</th>
+            <td>155cm</td>
+        </tr>
+        <tr>
+            <th>出身地</th>
+            <td>埼玉県</td>
+        </tr>
+        <tr>
+            <th>パーソナルカラー</th>
+            <td>イエベ春</td>
+        </tr>
+        <tr>
+            <th>骨格</th>
+            <td>ウェーブ</td>
+        </tr>
+        <tr>
+            <th>顔タイプ</th>
+            <td>キュート</td>
+        </tr>
+        <tr>
+            <th>MBTI</th>
+            <td>INFP</td>
+        </tr>
+    </table>
+
+    <!-- SNSリンク -->
+    <div class="sns">
+        <a href="https://www.instagram.com/_aoianno_bokuao?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
+        
+        <a href="https://bokuao.com/blog/list/1/0/?writer=12" target="_blank">Blog</a>
+    </div>
+        </div>
+        </div>
+
+        </section>
+
+        <section id="calendar" class="page" style="display:none;">
+            <img src="images/logo.svg" alt="ロゴ" class="home-svg"><br><br>
+            <h1>カレンダー</h1>
+            <div class="calendar">
+            <div class="birthday-card">
+                <h2>🌸 金澤亜美</h2>
+                <p>2月14日</p>
+            </div>
+
+            <div class="birthday-card">
+                <h2>🌼 萩原心花</h2>
+                <p>6月30日</p>
+            </div>
+
+            <div class="birthday-card">
+                <h2>💙 安納蒼衣</h2>
+                <p>1月30日</p>
+            </div>
+        </div>
+        </section>
+
+        <section id="music" class="page">
+        <img src="images/logo.svg" alt="ロゴ" class="home-svg"><br><br>
+        <h1>好きな音楽</h1>
+        <div class="music-card">
+        <h2>友よここでサヨナラだ</h2>
+        <p>フェアリーテイル100年クエストのEDテーマ<br>僕青が好きになったきっかけ！！！</p>
+        <a href="https://youtu.be/GWvnFpIr5MM?si=a5Ze42WRHPNQ5sba" target="_blank" class="youtube-btn">
+            ▶ YouTubeで見る
+        </a>
+        </div>
+
+        <div class="music-card">
+        <h2>空色の水しぶき</h2>
+        
+        <a href="https://youtu.be/H77btmwX12Y?si=_rIeoIMeIxWK1txq" target="_blank" class="youtube-btn">
+            ▶ YouTubeで見る
+        </a>
+        </div>
+
+        <div class="music-card">
+        <h2>あれはフェアリー</h2>
+        
+        <a href="https://youtu.be/vomKmy75nTA?si=QfPkxVuZMmTKHkJe" target="_blank" class="youtube-btn">
+            ▶ YouTubeで見る
+        </a>
+        </div>
+
+        <div class="music-card">
+        <h2>FUNKY SUMMER</h2>
+        
+        <a href="https://youtu.be/4Mhu2VA4vmQ?si=SckfkJvhORfxXfO3" target="_blank" class="youtube-btn">
+            ▶ YouTubeで見る
+        </a>
+        </div>
+
+        <div class="music-card">
+        <h2>暗闇の哲学者</h2>
+        
+        <a href="https://youtu.be/m9AALcwHsSY?si=BJ4xpiNVM8XSJ7XC" target="_blank" class="youtube-btn">
+            ▶ YouTubeで見る
+        </a>
+        </div>
+
+        <div class="music-card">
+        <h2>卒業まで</h2>
+        
+        <a href="https://youtu.be/EeqtC3DlUhY?si=OD_1CUt7HQSv_j4D" target="_blank" class="youtube-btn">
+            ▶ YouTubeで見る
+        </a>
+        </div>
+        </section>
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
